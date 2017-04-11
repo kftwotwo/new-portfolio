@@ -4,43 +4,8 @@
       <h2>Contact Me</h2>
       <p>Feel free to shout me a message by filling out the contact form.</p>
       <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-          <form class="form-horizontal">
-            <%= form_for @contact do |f| %>
-              <div class="form-group">
-                <%= f.label :first_name %>
-                <%= f.text_field :first_name %>
-              </div>
-
-              <div class="form-group">
-                <%= f.label :last_name %>
-                <%= f.text_field :last_name %>
-              </div>
-
-              <div class="form-group">
-                <%= f.label :company %>
-                <%= f.text_field :company %>
-              </div>
-
-              <div class="form-group">
-                <%= f.label :email %>
-                <%= f.email_field :email %>
-              </div>
-
-              <div class="form-group ">
-                <%= f.label :first_name %>
-                <%= f.text_field :first_name %>
-              </div>
-              <%= f.submit "Submit", class: 'btn'%>
-            <% end %>
-          <hr>
-          <h3>Our Social Sites</h3>
-          <ul class="list-inline banner-social-buttons">
-            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
-            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
-          </ul>
-        </div>
+        <%= render('static_pages/form') %>
+        <hr>
       </div>
     </div>
   </div>
