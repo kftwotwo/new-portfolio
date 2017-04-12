@@ -1,12 +1,15 @@
 // Place all the styles related to the static-pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#contact{
+#intro {
+}
+
+#contact {
   background:#333333;
-  color: white;
+  color:white;
   padding-bottom:80px;
 }
 
-textarea.form-control{
+textarea.form-control {
   height:100px;
 }

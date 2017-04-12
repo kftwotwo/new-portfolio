@@ -4,4 +4,12 @@ class StaticPagesController < ApplicationController
     @contact_kevin = Contact.new
   end
 
+  def create
+
+  end
+
+  private
+
+  def params
+  end
 end
