@@ -1,7 +1,38 @@
-// Place all the styles related to the static-pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.center-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
 #intro {
+  height: 80vh;
+  background-image: url('intro.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+  h5 {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  }
 }
 
 #contact {
