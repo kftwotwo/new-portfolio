@@ -5,28 +5,43 @@
   </div>
 </section>
 
-<section id="about" class="container">
-  <div class="col-lg-12">
-    <h1>Kevin Finley</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum tempor rutrum. Praesent gravida in dui sit amet lacinia. Proin vehicula risus turpis, quis posuere arcu fermentum in. Curabitur malesuada, mauris a dictum efficitur, nunc mi auctor lectus, ac porttitor nibh lectus quis magna. Vestibulum volutpat massa sed sem varius, laoreet tempor neque ornare. In viverra commodo ex, nec tincidunt diam. Cras nec ipsum nec libero mollis gravida.
-    </p>
+<section class="picture">
+  <div class="profile-img">
+    <%= image_tag('https://dl.dropboxusercontent.com/s/f8kkf7sqlh18n1t/20941128.png?dl=0') %>
   </div>
 </section>
 
-<%= render('static_pages/time-line') %>
-
 <section id="about" class="container">
-  <div class="col-lg-12">
-    <h1>Kevin Finley</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum tempor rutrum. Praesent gravida in dui sit amet lacinia. Proin vehicula risus turpis, quis posuere arcu fermentum in. Curabitur malesuada, mauris a dictum efficitur, nunc mi auctor lectus, ac porttitor nibh lectus quis magna. Vestibulum volutpat massa sed sem varius, laoreet tempor neque ornare. In viverra commodo ex, nec tincidunt diam. Cras nec ipsum nec libero mollis gravida.
-    </p>
+  <div class="col-lg-12 text-center">
+    <p>Hello my name is Kevin Finley. I was raised on my family's farm. While working on the farm hard work and dedication was instilled in me at a young age. In middle and high school I had part time jobs. I moved to Portland from Montana for better job opportunities and to be close with my brother. His parterner recommend me to a local boot camp called Epicodus. I took the Ruby on Rail course.</p>
+    <h1>My Journey</h1>
+
+    <p>When I was in middle school everyone in my class had to do a science project. I wasn't interested in plants, animals, or chemicals. So I asked my middle school teacher for any suggestions. Unfortunately she would not give me any suggestions. During the lunch period I ran into the high school science teacher (which was my wrestling coach). He knew I like computers so he recommended a website filled with computer science topics for me. I saw this link called "Coding an Alphabetizer" and next to it, in bold said "HARD". I don't remember what the description was but the goal was for letters and words to be in alphabetical order</p>
+
+    <p>My middle school teacher tried to discourage me from it. After three days of sweet talking, she gave me the okay. I had a month to work on this project. So the first two weeks was learning HTML and for my text editor I used Notepad on windows. Then for the remaining time I was learning JavaScript and CSS. Throughout the project I realized I had a interest in coding.</p>
+
+    <p>When we presented our projects, my middle school teacher was amazed that I actually had a working application. So after explaining my code to three judges. I placed in third so that meant I got a blue ribbon then moved on state. After state I did not pursue coding trough middle and high school. But right after graduating high school I moved to Portland to attend to Epicodus!</p>
+    <h2>Tech meetups</h2>
+    <ul>
+      <li>Portland Ruby Brigade</li>
+      <li>Future Talks</li>
+      <li>New Tech PDX</li>
+    </ul>
+    <h1>Showcase Projects</h1>
   </div>
 </section>
-
 
 <%= render('static_pages/projects') %>
+
+<section id="about" class="container">
+  <div class="col-lg-12 text-center">
+    <h1>Work Experience</h1>
+    <p>I have done alot of add jobs for the Absarokee community!</p>
+  </div>
+</section>
+
+
+<%= render('static_pages/time-line') %>
 
 <section id="contact">
   <div class="contact-section">
@@ -34,8 +49,19 @@
       <h2>Contact Me</h2>
       <p>Feel free to shout me a message by filling out the contact form.</p>
       <div class="row">
-        <%= render('static_pages/form') %>
-        <hr>
+        <div class="col-lg-6 col-sm-12">
+          <%= render('static_pages/form') %>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+          Email: kftwotwo@gmail.com
+          <h3>My Social Sites</h3>
+          <ul class="list-inline">
+            <li><a href="/" class="btn btn-outline-info"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
+            <li><a href="/" class="btn btn-outline-secondary"><i class="fa fa-github"> <span class="network-name">GitHub</span></i></a></li>
+            <li><a href="/" class="btn btn-outline-primary"><i class="fa fa-linkedin-square"> <span class="network-name">Linkedin</span></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

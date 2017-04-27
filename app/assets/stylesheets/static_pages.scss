@@ -6,6 +6,16 @@
   text-align: center;
 }
 
+h1 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: cornflowerblue !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
 #intro {
   height: 85vh;
   background-image: url('intro.jpeg');
@@ -26,6 +36,7 @@
   }
   h1 {
     font-family: 'Montserrat', sans-serif;
+    color: white !important;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
@@ -35,10 +46,21 @@
   }
 }
 
-#about {
-  .col-lg-12 {
-    padding-right: 0 !important;
+.picture {
+  padding-bottom: 7%;
+
+  .profile-img img {
+    display: block;
+    margin: -8.5% auto;
+    width: 17.5%;
+    min-width: 220px;
+    border-radius: 50%;
+    border: 8px solid white;
   }
+}
+
+#about {
+  padding-top: 20px;
 }
 
 #timeline {
