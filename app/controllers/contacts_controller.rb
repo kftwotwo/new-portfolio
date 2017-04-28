@@ -6,9 +6,12 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
+      ContactMeMailer.contact_me(@contact).deliver
+      flash[:success] = "Your message was sent. Thank you, I will touch bases with you as soon as possible!"
       redirect_to root_path
     else
       render :new
+      flash[:error] = "Opps..If you can't send the message you can send me an email!"
     end
   end
 
