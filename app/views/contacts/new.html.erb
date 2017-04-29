@@ -1,4 +1,16 @@
 <section id="intro">
+  <br>
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <div class="<%= flash_class(key) %> alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <%= value %>
+        </div>
+      <% end %>
+    </div>
+
   <div class="center-text">
     <h5>Welcome To My Site!</h5>
     <h1>It's Nice To Meet You</h1>
@@ -50,6 +62,7 @@
 <section id="contact">
   <div class="contact-section">
     <div class="container text-center">
+      <br>
       <h2>Contact Me</h2>
       <p>Feel free to shout me a message by filling out the contact form.</p>
       <div class="row">
@@ -58,14 +71,24 @@
         </div>
 
         <div class="col-lg-6 col-sm-12">
+          <br>
+          <h3>Email</h3>
+          <p>kftwotwo@gmail.com</p><br>
+          <h3>Phone</h3>
+          <p>(541)-508-6597</p><br>
           <h3>My Social Sites</h3>
           <ul class="list-inline">
-            <li><a href="/" class="btn btn-outline-info"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-            <li><a href="/" class="btn btn-outline-secondary"><i class="fa fa-github"> <span class="network-name">GitHub</span></i></a></li>
-            <li><a href="/" class="btn btn-outline-primary"><i class="fa fa-linkedin-square"> <span class="network-name">Linkedin</span></i></a></li>
+            <li><a href="https://twitter.com/kftwotwo" target="_blank" class="btn btn-outline-info"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
+            <li><a href="https://github.com/kftwotwo" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"> <span class="network-name">GitHub</span></i></a></li>
+            <li><a href="https://www.linkedin.com/in/kftwotwo/" target="_blank" class="btn btn-outline-primary"><i class="fa fa-linkedin-square"> <span class="network-name">Linkedin</span></i></a></li>
+            <li><a href="https://kftwotwo.github.io" target="_blank" class="btn btn-outline-primary"><i class="fa fa-chevron-left"> <span class="network-name">Blog</span></i></a></li>
           </ul>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <hr>
+    <a href="https://github.com/kftwotwo/new-portfolio" target="_blank" class="white-text">Resource</a>
   </div>
 </section>
