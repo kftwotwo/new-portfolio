@@ -1,15 +1,15 @@
 <section id="intro">
   <br>
-    <div class="container">
-      <% flash.each do |key, value| %>
-        <div class="<%= flash_class(key) %> alert-dismissible fade show" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <%= value %>
-        </div>
-      <% end %>
-    </div>
+  <div class="container">
+    <% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %> alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <%= value %>
+      </div>
+    <% end %>
+  </div>
 
   <div class="center-text">
     <h5>Welcome To My Site!</h5>
@@ -26,69 +26,42 @@
 <section id="about" class="row">
   <div class="container">
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
-      <p class="text-center">Hello my name is Kevin Finley. I was raised on my family's farm. Working on the farm I have learned what hard work and dedication was at a young age. In middle and high school I had a few part time jobs. I moved to Portland from Montana for better job opportunities and to be close with my brother. His parterner recommend me to a local boot camp called Epicodus. I took the Ruby on Rail course. I am super excited to apply what I have obtained from Epicodus and keep learning!</p>
-      <h1 class="text-center">My Journey</h1><hr>
+      <p class="text-center">
+        Hello my name is Kevin Finley. I was raised on my family's farm. Working on the farm I have learned what hard work and dedication was at a young age. In middle and high school, I had a few part time jobs. I moved to Portland from Montana for better job opportunities and to be close with my brother. His partner recommended me to a local boot camp called Epicodus. I took the Ruby on Rail course. I am super excited to apply what I have obtained from Epicodus and keep learning!
+      </p>
+      <hr>
+      <h1 id="top-pad" class="text-center">My Journey</h1>
 
-      <p>When I was in middle school everyone in my class had to do a science project. I wasn't interested in plants, animals, or chemicals. So I asked my middle school teacher for any suggestions. Unfortunately she would not give me any suggestions. During the lunch period I ran into the high school science teacher (which was my wrestling coach). He knew I like computers so he recommended me a website filled with computer science topics for me. I saw this link called "Coding an Alphabetizer" and next to it, in bold said "HARD". I don't remember what the description was but the goal was for letters and words to be in alphabetical order.</p>
+      <p>
+        When I was in middle school everyone in my class had to do a science project. I wasn't interested in plants, animals, or chemicals. So, I asked my middle school teacher for any suggestions. Unfortunately she would not give me any suggestions. During the lunch period I ran into the high school science teacher (which was my wrestling coach). He knew I like computers so he recommended me a website filled with computer science topics for me. I saw this link called "Coding an Alphabetizer" and next to it, in bold said "HARD". I don't remember what the description was but the goal was for letters and words to be in alphabetical order.
+      </p>
 
-      <p>My middle school teacher tried to discourage me from it. After three days of sweet talking, she gave me the okay. I had a month to work on this project. So the first two weeks I was learning HTML and CSS. You are probably going to get a kick out of this, the text editor I chose was Notepad on windows. Then for the remaining time I was learning JavaScript. Throughout the project I realized I had a interest in coding.</p>
+      <p>
+        My middle school teacher tried to discourage me from it. After three days of sweet talking, she gave me the okay. I had a month to work on this project. So the first two weeks I was learning HTML and CSS. You are probably going to get a kick out of this, the text editor I chose was Notepad on windows. Then for the remaining time I was learning JavaScript. Throughout the project I realized I had an interest in coding.
+      </p>
 
-      <p>When we presented our projects, my middle school teacher was amazed that I actually had a working application. So after explaining my code to three judges. I placed in third so that meant I got a blue ribbon then moved on state. After state I did not pursue coding but right after graduating high school I moved to Portland and attended to Epicodus!</p>
-      <div class="text-center">
-        <h2>Tech meetups</h2><hr>
-        <p>Portland Ruby Brigade</p>
-        <p>Future Talks</p>
-        <p>New Tech PDX</p>
-        <h1>Showcase Projects</h1><hr>
-        <p>Here are a few projects I have made and contributed to.</p>
+      <p>
+        When we presented our projects, my middle school teacher was amazed that I had a working application. So, after explaining my code to three judges. I placed in third so that meant I got a blue ribbon then moved on state. After state, I did not pursue coding but right after graduating high school I moved to Portland and attended to Epicodus!
+      </p>
+      <div id="top-pad" class="text-center">
+        <hr>
+        <h1>Showcase Projects</h1>
       </div>
     </div>
   </section>
 
-<%= render('contacts/projects') %>
+  <%= render('contacts/projects') %>
 
-<section id="about" class="row">
-  <div class="container">
-    <div class="col-lg-8 offset-lg-2 text-center">
-      <h1>Work Experience</h1><hr>
-      <p>I have done alot of add jobs for the Absarokee community!</p>
-    </div>
-  </div>
-</section>
-
-
-<%= render('contacts/time-line') %>
-
-<section id="contact">
-  <div class="contact-section">
-    <div class="container text-center">
-      <br>
-      <h2>Contact Me</h2>
-      <p>Feel free to shout me a message by filling out the contact form.</p>
-      <div class="row">
-        <div class="col-lg-6 col-sm-12">
-          <%= render('contacts/form') %>
-        </div>
-
-        <div class="col-lg-6 col-sm-12">
-          <br>
-          <h3>Email</h3>
-          <p>kftwotwo@gmail.com</p><br>
-          <h3>Phone</h3>
-          <p>(541)-508-6597</p><br>
-          <h3>My Social Sites</h3>
-          <ul class="list-inline">
-            <li><a href="https://twitter.com/kftwotwo" target="_blank" class="btn btn-outline-info"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-            <li><a href="https://github.com/kftwotwo" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"> <span class="network-name">GitHub</span></i></a></li>
-            <li><a href="https://www.linkedin.com/in/kftwotwo/" target="_blank" class="btn btn-outline-primary"><i class="fa fa-linkedin-square"> <span class="network-name">Linkedin</span></i></a></li>
-            <li><a href="https://kftwotwo.github.io" target="_blank" class="btn btn-outline-primary"><i class="fa fa-chevron-left"> <span class="network-name">Blog</span></i></a></li>
-          </ul>
-        </div>
+  <section id="top-pad" class="row">
+    <div class="container">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <hr>
+        <h1>Work Experience</h1>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <hr>
-    <a href="https://github.com/kftwotwo/new-portfolio" target="_blank" class="white-text">Resource</a>
-  </div>
-</section>
+  </section>
+
+
+  <%= render('contacts/time-line') %>
+
+  <%= render('contacts/footer') %>
