@@ -26,7 +26,7 @@ Rails.application.configure do
     :authentication => :plain,
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => "localhost:3000",
+    :domain => "http://www.kftwotwo.com",
   }
 
   config.i18n.fallbacks = true
