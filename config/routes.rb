@@ -3,7 +3,11 @@ require 'sidekiq/web'
 Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
-  mount Sidekiq::Web => '/sidekiq'
+  devise_for :admins
+
+  authenticate :admins do
+    mount Sidekiq::Web => '/sidekiq'
+  end
 
   root "contacts#new"
 end

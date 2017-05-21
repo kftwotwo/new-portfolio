@@ -20,6 +20,7 @@ gem 'sendgrid'
 gem 'redis'
 gem 'sidekiq'
 gem 'sinatra', :require => false
+gem 'devise'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
