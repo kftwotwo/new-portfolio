@@ -2,14 +2,11 @@
 <%= form_for @blog do |f| %>
 
 
-    <%= f.label :account_name %>
-    <%= f.text_field :account_name %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
 
-    <%= f.label :account_number %>
-    <%= f.text_field :account_number %>
-
-    <%= f.label :kind, "Type" %>
-    <%= f.text_field :kind %>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
 
   <%= f.submit "Add Blog", class: ''%>
 <% end %>
