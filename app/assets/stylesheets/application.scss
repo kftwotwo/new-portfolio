@@ -1,5 +1,13 @@
 @import "bootstrap";
 @import "contacts";
+
+// Blog
 @import "blogs";
+@import "blog_nav";
+@import "blog_footer";
+
+// Login
 @import "devise";
 
+// Shared
+@import "social_icons";

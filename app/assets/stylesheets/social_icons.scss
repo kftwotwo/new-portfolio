@@ -1,0 +1,51 @@
+.social-icon {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.social-icon:before,
+.social-icon:after {
+  content: " ";
+  display: table;
+}
+
+.social-icon:after {
+  clear: both;
+}
+
+.social-icon li {
+  display: inline-block;
+  margin: 2px 4px;
+}
+
+.social-icon li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-align: center;
+  border: 0 none;
+  border-radius: 50%;
+  font-size: 17px;
+  box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon li a:hover {
+   box-shadow: 0px 8px 15px 0px rgba(90, 91, 95, 0.33);
+}
+
+.twitter {
+   background-color: #1da1f2;
+}
+
+.linkedin {
+   background-color: #0077b5;
+}
+
+.github {
+   background-color: #333333;
+}

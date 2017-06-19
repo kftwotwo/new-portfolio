@@ -2,17 +2,7 @@
 
 <section id="intro">
   <br>
-  <div class="container">
-    <% flash.each do |key, value| %>
-      <div class="<%= flash_class(key) %> alert-dismissible fade show" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <%= value %>
-      </div>
-    <% end %>
-  </div>
-
+<%= render 'shared/flash_message' %>
   <div class="center-text">
     <h5>Welcome To My Site!</h5>
     <h1>It's Nice To Meet You</h1>
