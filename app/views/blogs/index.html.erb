@@ -6,28 +6,29 @@
       <div class="col-lg-9 col-md-9">
         <div class="col-md-12 page-body">
 
-            <div class="sub-title">
-              <h2>KevBlogs</h2>
-            </div>
+          <div class="sub-title">
+            <h2>KevBlogs</h2>
+          </div>
 
-            <div class="col-md-12 content-page">
-              <div class="col-lg-12 col-md-12 blog-post">
-                <%# todo run loop here %>
+          <div class="col-md-12 content-page">
+            <div class="col-lg-12 col-md-12 blog-post">
+              <% @blogs.each do |blog| %>
                 <div class="post-title">
-                  <a><h1>The best coding topic ever?</h1></a>
+                  <h1><%= link_to "#{blog.title}",  blog_path(blog.id) %></h1>
                 </div>
                 <div class="post-info">
-                  <span>May 28, 2017</span>
+                  <span><%= blog.created_at.strftime("%B %d, %Y") %></span>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>
-                <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
-              </div>
-              <%# todo end loop %>
-
+                <%= truncate(blog.body, length: 350) %>
+                <%= link_to "Read More",  blog_path(blog.id), class: 'button button-style button-anim fa fa-long-arrow-right'%>
+              <% end %>
             </div>
 
-            <p>load more or paginate here</p>
           </div>
+
+          <%# TODO create pagination here%>
+          <p>load more or paginate here</p>
+        </div>
         <%= render('blogs/blogfooter') %>
       </div>
     </div>
