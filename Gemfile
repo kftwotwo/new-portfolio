@@ -20,6 +20,9 @@ gem 'sendgrid'
 gem 'redis'
 gem 'sidekiq'
 gem 'sinatra', :require => false
+gem 'devise'
+gem 'redcarpet'
+gem 'coderay'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
@@ -32,6 +35,8 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'sqlite3'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :development do
