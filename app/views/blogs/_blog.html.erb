@@ -1,0 +1,10 @@
+<div class="post-title">
+  <h1><%= link_to "#{blog.title}",  blog_path(blog.id) %></h1>
+</div>
+<div class="post-info">
+  <span><%= blog.created_at.strftime("%B %d, %Y") %></span>
+</div>
+<%= truncate(strip_tags(markdown(blog.body)), length: 500) %>
+<br/>
+<%= link_to "Read More",  blog_path(blog.id), class: 'button button-style button-anim fa fa-long-arrow-right'%>
+

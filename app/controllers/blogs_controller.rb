@@ -2,7 +2,12 @@ class BlogsController < ApplicationController
   before_action :authenticate_admin!, except: [:index, :show]
 
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.paginate(page: params[:page], per_page: 2).order('created_at DESC')
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def new
