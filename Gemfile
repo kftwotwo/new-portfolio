@@ -21,6 +21,7 @@ gem 'redis'
 gem 'sidekiq'
 gem 'sinatra', :require => false
 gem 'devise'
+gem 'redcarpet'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
