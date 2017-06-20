@@ -23,6 +23,7 @@ gem 'sinatra', :require => false
 gem 'devise'
 gem 'redcarpet'
 gem 'coderay'
+gem 'will_paginate', '~> 3.1.0'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
@@ -37,6 +38,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+  gem 'betterlorem'
 end
 
 group :development do

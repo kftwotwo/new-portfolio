@@ -1,4 +1,5 @@
 require 'redcarpet'
+require 'rexml/parsers/pullparser'
 
 module BlogsHelper
 
