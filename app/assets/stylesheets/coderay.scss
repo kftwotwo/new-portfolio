@@ -1,0 +1,28 @@
+.CodeRay {
+  background-color: #efefef;
+}
+
+.CodeRay pre {
+  margin: 0px;
+  padding: .5em;
+}
+
+
+table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px }
+table.CodeRay td {
+  padding: 1em 0.5em;
+  vertical-align: top;
+}
+
+.CodeRay .line-numbers, .CodeRay .no {
+  background-color: grey;
+  color: #AAA;
+  text-align: right;
+}
+
+.CodeRay .line-numbers a {
+  color: #AAA;
+}
+
+.CodeRay .code { width: 100% }
+

@@ -20,7 +20,6 @@
                 <span><%= "#{@blog.created_at.strftime("%B %d, %Y")}/ by Kevin Finley" %></span>
               </div>
 
-              <%# <p><%= @blog.body %1></p> %>
                 <p><%= markdown(@blog.body)%></p>
 
               <h2>Discussion</h2>
