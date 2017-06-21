@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20170521081507) do
 
   create_table "blogs", force: :cascade do |t|
     t.string   "title"
+    t.string   "tags"
     t.string   "body"
     t.integer  "likes"
     t.datetime "created_at", null: false
