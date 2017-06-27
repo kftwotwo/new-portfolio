@@ -1,28 +1,17 @@
 a {
-    text-decoration: none !important;
-    color: cornflowerblue;
+  text-decoration: none !important;
+  color: cornflowerblue;
 }
 
-a:hover,
-a:focus,
-a:active {
-    text-decoration: none;
-    outline: none;
-    color: #333333;
-}
-
-b {
-    font-weight: 600;
-    color: #333333;
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+  color: #333333;
 }
 
 p {
     font-size: 14px;
     font-family: "Poppins", sans-serif;
-}
-
-button {
-    background-color: transparent;
 }
 
 *:focus {
@@ -51,7 +40,6 @@ button {
     font-size: 25px;
     letter-spacing: 0.5px;
     font-weight: 600;
-
 }
 
 .sub-title i {
@@ -140,7 +128,6 @@ div.blog-post {
   transition: all 0.3s;
 }
 
-
 .button:before {
   font-family: 'FontAwesome';
   speak: none;
@@ -179,23 +166,6 @@ div.blog-post {
   opacity: 1;
 }
 
-// pagination
-.pagination a{
-  display:none !important;
+.search-form {
+  float: right;
 }
-
-.pagination span{
-  display: none !important;
-}
-
-.pagination em{
-  display: none !important;
-}
-@media only screen and (max-width: 2000px) {
-  .about-fixed {
-    position: inherit;
-    width: auto;
-    padding-right: 5%;
-  }
-}
-

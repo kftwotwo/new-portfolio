@@ -1,0 +1,18 @@
+.pagination a{
+  display:none !important;
+}
+
+.pagination span{
+  display: none !important;
+}
+
+.pagination em{
+  display: none !important;
+}
+@media only screen and (max-width: 2000px) {
+  .about-fixed {
+    position: inherit;
+    width: auto;
+    padding-right: 5%;
+  }
+}
