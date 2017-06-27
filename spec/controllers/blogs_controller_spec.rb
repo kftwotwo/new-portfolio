@@ -3,7 +3,7 @@ require 'rails_helper'
 describe BlogsController do
 
   before do
-    @admin = FactoryGirl.create(:admin)
+    @user = FactoryGirl.create(:user)
   end
 
   describe "GET new" do
@@ -15,7 +15,7 @@ describe BlogsController do
       end
 
       it "renders new" do
-        expect(response).to redirect_to("/admins/sign_in")
+        expect(response).to redirect_to("/users/sign_in")
       end
     end
 
