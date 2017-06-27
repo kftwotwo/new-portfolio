@@ -1,4 +1,4 @@
-$ ->
+$(document).on 'turbolinks:load', ->
   if $('#infinite-scrolling').size() > 0
     $(window).scroll ->
       url = $('.pagination .next_page').attr('href')
