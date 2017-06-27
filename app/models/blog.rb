@@ -3,7 +3,7 @@ class Blog < ApplicationRecord
     columns = %w{title tags body}
     self.where(
       columns
-      .map {|c| "#{c} like :search" }
+      .map {|c| "#{c} ILIKE :search" }
       .join(' OR '),
     search: "%#{search}%"
     )
