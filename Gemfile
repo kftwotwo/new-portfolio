@@ -24,6 +24,7 @@ gem 'devise'
 gem 'redcarpet'
 gem 'coderay'
 gem 'will_paginate', '~> 3.1.0'
+gem 'cancan'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
